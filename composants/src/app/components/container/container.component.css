@@ -1,0 +1,34 @@
+.container{
+    height: calc(100vh - 120px);
+    display: flex;
+    color: white;
+    
+    font-weight: bold;
+    font-size: 1.5rem;
+ 
+}
+
+.main{
+    background-color: pink;
+    
+    flex: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.aside{
+    background-color: green;
+   
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width:900px) {
+    .container{
+        flex-direction: column-reverse;
+    }
+}
